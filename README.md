@@ -21,7 +21,14 @@ npm install
 ```
 This will install the dependencies based on the information in the [`package.json`](package.json) file.
 
-3. **Run the Application**
+3. **Environment Variables**
+Create a `.env` file in the folder
+```sh
+touch .env
+```
+Copy the contents of the [public env](public-env) file, and paste in the `.env` file.
+
+4. **Run the Application**
 ```sh
 npm start
 ```
@@ -34,7 +41,7 @@ npm start
 It's a Compound Component responsible for rendering the sections of the body of the webpage that contain the marketing boards. Currently, It renders each of the Jumbotron marketing items in the [Jumbo Data JSON file](./src/fixtures/jumbo.json). It also has the following sub-components:
 
 1. `Jumbotron.Container` defined in the Jumbotron [`Index.js` file](./src/components/jumbotron/index.js).
-    Renders the Overall container for all the Jumbotron components that gets passed directly to the App Component.
+    Renders the Overall container for all the Jumbotron components that gets passed to the Jumbotron container JSX element that is in the [jumbotron container file](./src/containers/jumbotron.js).
 2. `Jumbotron.Pane` defined in the Jumbotron [`Index.js` file](./src/components/jumbotron/index.js).
     The Jumbotron Pane renders it's contents which could be either text or an image. The Pane is half the width of the Jumbotron Div container within which it is placed.
 3. `Jumbotron.Title` defined in the Jumbotron [`Index.js` file](./src/components/jumbotron/index.js).
