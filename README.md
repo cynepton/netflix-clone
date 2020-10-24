@@ -52,3 +52,17 @@ It's a Compound Component responsible for rendering the sections of the body of 
     This renders the Jumbotron Image within the Jumbotron Pane.
 
 The CSS styles for the Jumbotron are located in the [`Jumbotron.js`](./src/components/jumbotron/styles/jumbotron.js) file. The Styled-Components library is used for the styling.
+
+### [Footer](src/components/footer)
+It's a Compound Component responsible for rendering the footer of the webpage. It also has the following sub-components:
+
+1. `Footer.Container` defined in the Footer [`Index.js` file](./src/components/footer/index.js).
+    Renders the Overall container for all the Footer components.
+2. `Footer.Column` defined in the Footer [`Index.js` file](./src/components/footer/index.js).
+3. `Footer.Row` defined in the Footer [`Index.js` file](./src/components/footer/index.js).
+4. `Footer.Title` defined in the Footer [`Index.js` file](./src/components/footer/index.js).
+5. `Footer.Link` defined in the Footer [`Index.js` file](./src/components/footer/index.js).
+6. `Footer.Text` defined in the Footer [`Index.js` file](./src/components/footer/index.js).
+7. `Footer.Break` defined in the Footer [`Index.js` file](./src/components/footer/index.js).
+
+The CSS styles for the Footer are located in the [`Footer.js`](./src/components/jumbotron/styles/jumbotron.js) file. The Styled-Components library is used for the styling.
