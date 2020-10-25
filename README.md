@@ -74,3 +74,21 @@ This renders a break to create spacing within the footer.
 The CSS styles for the Footer are located in the [`Footer.js`](./src/components/footer/styles/footer.js) file. The Styled-Components library is used for the styling.
 
 ### [Accordion](src/components/accordion)
+It's a Compound Component responsible for rendering the accordion feature within the webpage. In this case, the accordion feature contains the FAQs. It also has the following sub-components:
+
+1. `Accordion` defined in the Accordion [`Index.js` file](./src/components/accordion/index.js).
+    Renders the Overall container for all the Footer components.
+2. `Accordion.Frame` defined in the Accordion [`Index.js` file](./src/components/accordion/index.js).
+    Currently unused.
+3. `Accordion.Inner` defined in the Accordion [`Index.js` file](./src/components/accordion/index.js).
+    Renders the inner div element within the full container. It may not always be necessary. In this case it is used to set the width of the actual accordion to be less than the full container width.
+4. `Accordion.Title` defined in the Accordion [`Index.js` file](./src/components/accordion/index.js).
+    Renders the title of the Accordion component.
+5. `Accordion.Item` defined in the Accordion [`Index.js` file](./src/components/accordion/index.js).
+    Contains each accordion item. The item contains the header and the body.
+6. `Accordion.Header` defined in the Accordion [`Index.js` file](./src/components/accordion/index.js).
+    Renders the accordion header. When the accordion is closed, only the header shows.
+7. `Accordion.Body` defined in the Accordion [`Index.js` file](./src/components/accordion/index.js).
+    Renders the contents of the accordion. When the header is clicked, it toggles the body to either open or close.
+
+The CSS styles for the Accordion are located in the [`Accordion.js`](./src/components/accordion/styles/accordion.js) file. The Styled-Components library is used for the styling.
