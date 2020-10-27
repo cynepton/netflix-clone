@@ -108,3 +108,9 @@ It's a Compound Component responsible for rendering an input bar that allows the
     Renders a line break to seperate items within the flexbox.
 
 The CSS styles for the Accordion are located in the [`OptForm.js`](./src/components/optForm/styles/optForm.js) file. The Styled-Components library is used for the styling.
+
+## React Router
+The react router endpoints are defined in the [Routes file](./src/constants/routes.js). Any new routes should be added there to make it easier to monitor all the routes from a single location.
+
+### Home Page `/`
+This is the base route and renders the home page defined in the [Home Page File](./src/pages/home.js)
