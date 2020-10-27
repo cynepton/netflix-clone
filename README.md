@@ -35,6 +35,9 @@ npm start
 
 ## React Components
 
+All the components take in `...restProps` which are the props for the component and spread it to the HTML tags within them. Please see the component structure to accurately understand where the props are placed.
+Most components also take `{children}`. Tags like the `input` tag do not take children since it doesn't need a closing tag and there is nothing to be nested within it's tags.
+
 ### [Jumbotron](src/components/jumbotron)
 > See [KarlHadwen](https://github.com/karlhadwen)'s [Youtube Video on Compound Components](https://www.youtube.com/watch?v=nHMAMS38x-E) and [Github Repo](https://github.com/karlhadwen/compound-components).
 
@@ -74,7 +77,7 @@ This renders a break to create spacing within the footer.
 The CSS styles for the Footer are located in the [`Footer.js`](./src/components/footer/styles/footer.js) file. The Styled-Components library is used for the styling.
 
 ### [Accordion](src/components/accordion)
-It's a Compound Component responsible for rendering the accordion feature within the webpage. In this case, the accordion feature contains the FAQs. It also has the following sub-components:
+It's a Compound Component responsible for rendering the accordion feature within the webpage. In this case, the accordion feature contains the FAQs, but it can also be reused elsewhere. It also has the following sub-components:
 
 1. `Accordion` defined in the Accordion [`Index.js` file](./src/components/accordion/index.js).
     Renders the Overall container for all the Footer components.
@@ -92,3 +95,16 @@ It's a Compound Component responsible for rendering the accordion feature within
     Renders the contents of the accordion. When the header is clicked, it toggles the body to either open or close.
 
 The CSS styles for the Accordion are located in the [`Accordion.js`](./src/components/accordion/styles/accordion.js) file. The Styled-Components library is used for the styling.
+
+### [OptForm](src/components/optForm)
+It's a Compound Component responsible for rendering an input bar that allows the user to type in their email to subcribe to the service. It also has the following sub-components:
+
+1. `OptForm` defined in the OptForm [`Index.js` file](./src/components/optForm/index.js).
+    Renders the container for the optForm.
+2. `OptForm.Input` defined in the OptForm [`Index.js` file](./src/components/optForm/index.js).
+3. `OptForm.Button` defined in the OptForm [`Index.js` file](./src/components/optForm/index.js).
+4. `OptForm.Text` defined in the OptForm [`Index.js` file](./src/components/optForm/index.js).
+5. `OptFor.Break` defined in the OptForm [`Index.js` file](./src/components/optForm/index.js).
+    Renders a line break to seperate items within the flexbox.
+
+The CSS styles for the Accordion are located in the [`OptForm.js`](./src/components/optForm/styles/optForm.js) file. The Styled-Components library is used for the styling.
