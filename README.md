@@ -114,3 +114,5 @@ The react router endpoints are defined in the [Routes file](./src/constants/rout
 
 ### Home Page `/`
 This is the base route and renders the home page defined in the [Home Page File](./src/pages/home.js)
+
+1:33:50
