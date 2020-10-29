@@ -18,16 +18,16 @@ export function HeaderContainer() {
                 <Feature.SubTitle>
                     Watch anywhere. Cancel at any time.
                 </Feature.SubTitle>
-            </Feature>
 
-            <OptForm>
-                <OptForm.Text>
-                    Ready to watch? Enter your email to create or start your membership
-                </OptForm.Text>
-                <OptForm.Break/>
-                <OptForm.Input placeholder="Email Address" />
-                <OptForm.Button>Get Started</OptForm.Button>
-            </OptForm>
+                <OptForm>
+                    <OptForm.Text>
+                        Ready to watch? Enter your email to create or start your membership
+                    </OptForm.Text>
+                    <OptForm.Break/>
+                    <OptForm.Input placeholder="Email Address" />
+                    <OptForm.Button>Get Started</OptForm.Button>
+                </OptForm>
+            </Feature>
         </Header>
     );
 }
